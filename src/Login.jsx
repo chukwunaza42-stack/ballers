@@ -28,8 +28,8 @@ function Login() {
   };
 
   return (
-    <div className="ml-80 mt-10">
-      <h1 className="text-3xl font-bold">Login Here</h1>
+    <div className="bg-[url('https://wallpapers.com/images/featured/football-players-hd-emqpbm760h1avxrx.jpg')] min-h-screen bg-cover bg-center"> 
+      <h1 className="text-3xl font-bold text-white text-center">Login Here</h1>
       <form onSubmit={handleLogin}>
         <input
           type="email"
@@ -37,7 +37,7 @@ function Login() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="border border-black m-5"
+          className="border border-white ml-10 text-white mt-5"
         />
         <br />
         <input
@@ -46,13 +46,13 @@ function Login() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           required
-          className="border border-black m-5"
+          className="border border-white ml-10 text-white mt-5"
         />
         <br />
         {error && <p className="text-red-500">{error}</p>}
         <button
           type="submit"
-          className="bg-green-300 border border-black p-2.5"
+          className="bg-green-300 border border-white p-2.5 m-11 text-white font-bold "
         >
           Login
         </button>
